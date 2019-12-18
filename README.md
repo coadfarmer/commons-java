@@ -1,5 +1,34 @@
 # common-utils
 
+## 项目中直接使用，`pom.xml`中添加如下配置
+``` xml
+<project>
+    ...
+    <repositories>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://Qm6z0i:eqWmC4GH3c@repo.rdc.aliyun.com/repository/1635-release-VJVUjq/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>rdc-snapshots</id>
+            <url>https://Qm6z0i:eqWmC4GH3c@repo.rdc.aliyun.com/repository/1635-snapshot-iAOTyg/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+</project>
+```
+
 ## ```class``` MapBuilder
 快速的构建Map<K,V>实例
 Easy to build a Map<K,V> instance.
