@@ -4,6 +4,14 @@
 ``` xml
 <project>
     ...
+    <dependencies>
+        <dependency>
+            <groupId>com.cloume.common</groupId>
+            <artifactId>commons-java</artifactId>
+            <version>0.1.1-SNAPSHOT</version>
+        </dependency>
+        ...
+    </dependencies>
     <repositories>
         <repository>
             <id>rdc-releases</id>
